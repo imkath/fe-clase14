@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+/* Header */
+
+.header {
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.header-top {
+  background-color: #1cd1b0;
+}
+
+.header-top a {
+  color: black;
+  padding: 1rem 0 1rem 2rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header-bottom {
+  background-color: #00669f;
+  height: 100px;
+}
+
+.header-bottom h1 {
+  margin: 0;
+  padding: 1.5rem 2rem;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+/* Main */
+
+main {
+  background-color: white;
+}
+
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.card {
+  width: 300px;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.card-top {
+  position: relative;
+  width: 300px;
+  height: 193px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card-batman .card-top {
+  background-image: url("./img/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-harley .card-top {
+  background-image: url("./img/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-top img.profile {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30%;
+  left: 30%;
+}
+
+.card-top img.heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.card-bottom {
+  background-color: #f3f3f3;
+  padding: 3rem 1rem 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-batman .card-bottom h2 {
+  text-transform: uppercase;
+}
+
+.card-bottom h2 {
+  text-align: center;
+}
+
+.card-bottom p {
+  margin: 0;
+  text-align: left;
+}
+
+.card-bottom a {
+  background-color: #00669f;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  margin: 1rem auto 0.5rem;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #00669f;
+}
+
+.footer p {
+  margin: 0;
+  padding: 1rem 0 1rem 2rem;
+  color: white;
+}
