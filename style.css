@@ -17,12 +17,12 @@ body {
 }
 
 .header-top {
-  background-color: #1cd1b0;
+  background-color: #d1891c;
 }
 
 .header-top a {
   color: black;
-  padding: 1rem 0 1rem 2rem;
+  padding: 0 2rem;
   display: inline-block;
   text-decoration: none;
 }
@@ -30,13 +30,17 @@ body {
 .header-bottom {
   background-color: #00669f;
   height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .header-bottom h1 {
   margin: 0;
-  padding: 1.5rem 2rem;
+  padding-left: 2rem;
   font-weight: 400;
   font-size: 40px;
+  color: white;
 }
 
 /* Main */
@@ -45,16 +49,32 @@ main {
   background-color: white;
 }
 
+.plus {
+  border: none;
+  border-radius: 50%;
+  background-color: #00669f;
+  color: white;
+  font-size: 70px;
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  bottom: 40%;
+  right: 1rem;
+  z-index: 1;
+}
+
 .cards {
   list-style: none;
   padding: 0;
   margin: 5rem 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
   width: 300px;
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -72,8 +92,22 @@ main {
   background-position: center;
 }
 
+.card-maravilla .card-top {
+  background-image: url("./img/banner-mujer-maravilla.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-superman .card-top {
+  background-image: url("./img/banner-superman.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .card-harley .card-top {
-  background-image: url("./img/bg2.png");
+  background-image: url("./img/banner-herley-quinn.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -86,6 +120,8 @@ main {
   position: absolute;
   bottom: -30%;
   left: 30%;
+  width: 120px;
+  height: auto;
 }
 
 .card-top img.heart {
@@ -100,6 +136,9 @@ main {
   background-color: #f3f3f3;
   padding: 3rem 1rem 1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-batman .card-bottom h2 {
@@ -130,14 +169,53 @@ main {
 
 .footer {
   background-color: #00669f;
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer p {
-  margin: 0;
-  padding: 1rem 0 1rem 2rem;
   color: white;
+  text-align: end;
+  width: 50%;
 }
 
 .footer p span {
   text-transform: uppercase;
+}
+
+.footer img {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 1328px) {
+  .header-bottom h1 {
+    font-size: 30px;
+  }
+
+  .plus {
+    font-size: 60px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  .footer {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer p {
+    text-align: center;
+    width: auto;
+  }
 }
